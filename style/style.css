@@ -207,6 +207,13 @@ a:hover {
     width: 99%;
 }
 
+.other-skills {
+    margin-top: 1em;
+    color: #4F4F4F;
+    font-size: 0.85em;
+    line-height: 1.2;
+}
+
 /* book */
 .subject {
     padding-bottom: 3em;
@@ -231,7 +238,7 @@ img {
 .subtitle {
     margin-top: 0.2em;
     color: #4F4F4F;
-    font-size: 0.9em;
+    font-size: 0.87em;
 }
 
 .dl-button-container {
