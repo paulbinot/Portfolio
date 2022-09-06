@@ -27,10 +27,14 @@ p {
     border-top: 1px solid black;
 }
 
+.marker-container {
+    position: relative;
+}
+
 .marker {
     display: inline-block;
     position: absolute;
-    top: -4em;
+    top: -10.85em;
 }
 
 .header {
@@ -109,6 +113,7 @@ a:hover {
     position: sticky;
     top: 3em;
     z-index: -1;
+    word-break: break-all;
 }
 
 /* scolarité */
