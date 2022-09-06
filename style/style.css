@@ -209,7 +209,7 @@ a:hover {
 
 /* book */
 .subject {
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 /* .image-container {
     transform: translate(5px, 5px);
@@ -229,7 +229,7 @@ img {
 }
 
 .subtitle {
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     color: #4F4F4F;
     font-size: 0.9em;
 }
