@@ -56,6 +56,7 @@ p {
     background: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid black;
     top: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .menu-large {
@@ -105,10 +106,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px)  {
-
-    h1 {
-        font-size: 2.5em;
-    }
     
     .menu-links {
         display: none;
@@ -122,8 +119,11 @@ a:hover {
         display: block;
     }
 
+    .menu {
+        padding-left: 2em;
+    }
     .menu-button-container {
-        width: 4em;
+        width: auto;
         height: 5em;
         display: flex;
         justify-content: center;
@@ -131,7 +131,12 @@ a:hover {
     }
 
     .menu-button {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
     }
 
     .button-part {
@@ -139,7 +144,7 @@ a:hover {
         height: 5px;
         background: #14FF00;
         border-radius: 1.5px;
-        transition: all 0s ease-in-out;
+        transition: all 0.15s ease-in-out;
     }
 
     .button-part::before, .button-part::after {
@@ -149,6 +154,7 @@ a:hover {
         height: 5px;
         background: #14FF00;
         border-radius: 1.5px;
+        transition: all 0.2s ease-in-out;
     }
 
     .button-part::before {
@@ -159,15 +165,14 @@ a:hover {
     }
 
     .menu-button.open .button-part {
-        transform: translateX(-50px);
         background-color: transparent;
     }
     
     .menu-button.open .button-part::before {
-        transform: rotate(45deg) translate(35px, -35px);
+        transform: rotate(45deg);
     }
     .menu-button.open .button-part::after {
-        transform: rotate(-45deg) translate(35px, 35px);
+        transform: rotate(-45deg);
     }
 
     .title {
